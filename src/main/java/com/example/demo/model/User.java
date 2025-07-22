@@ -2,14 +2,17 @@ package com.example.demo.model;
 
 public class User {
     private String username;
-    private String secretKey; // Khóa bí mật cho 2FA
+    private String secretKey;
 
-    // Constructor, getters, setters
+    // Constructors
+    public User() {}
+
     public User(String username, String secretKey) {
         this.username = username;
         this.secretKey = secretKey;
     }
 
+    // Getters and Setters
     public String getUsername() {
         return username;
     }
